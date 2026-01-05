@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toko Ikan Cupang | Cupang Juara</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f5f7fa;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #0f766e, #14b8a6);
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header h1 { margin: 0; font-size: 2.2em; }
+    header p { margin-top: 8px; font-weight: 300; }
+
+    nav {
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 12px 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      text-decoration: none;
+      color: #0f766e;
+      font-weight: 500;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .section-title h2 {
+      margin: 0;
+      font-size: 1.8em;
+      color: #0f766e;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      transition: transform .2s;
+    }
+    .card:hover { transform: translateY(-5px); }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-body { padding: 16px; }
+    .card-body h3 { margin: 0 0 6px; }
+    .price {
+      color: #14b8a6;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 14px;
+      background: #14b8a6;
+      color: #fff;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+    .btn:hover { background: #0f766e; }
+
+    .about, .contact {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+    }
+
+    footer {
+      margin-top: 40px;
+      background: #0f766e;
+      color: #fff;
+      text-align: center;
+      padding: 18px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Cupang Juara</h1>
+    <p>Jual Ikan Cupang Berkualitas • Sehat • Siap Kontes</p>
+  </header>
+
+  <nav>
+    <a href="#produk">Produk</a>
+    <a href="#tentang">Tentang</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <div class="container" id="produk">
+    <div class="section-title">
+      <h2>Produk Unggulan</h2>
+    </div>
+
+    <div class="products">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1619994948937-ef1e758d46c7" alt="Cupang Halfmoon">
+        <div class="card-body">
+          <h3>Cupang Halfmoon</h3>
+          <div class="price">Rp 150.000</div>
+          <a class="btn" href="https://wa.me/628xxxxxxxxxx" target="_blank">Beli via WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1623234539661-2f3c4c8b5e65" alt="Cupang Koi">
+        <div class="card-body">
+          <h3>Cupang Koi</h3>
+          <div class="price">Rp 200.000</div>
+          <a class="btn" href="https://wa.me/628xxxxxxxxxx" target="_blank">Beli via WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1615971264950-7d7c2e1b6a25" alt="Cupang Plakat">
+        <div class="card-body">
+          <h3>Cupang Plakat</h3>
+          <div class="price">Rp 120.000</div>
+          <a class="btn" href="https://wa.me/628xxxxxxxxxx" target="_blank">Beli via WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="tentang">
+    <div class="about">
+      <h2>Tentang Kami</h2>
+      <p>
+        Cupang Juara adalah toko ikan cupang yang fokus pada kualitas dan kesehatan ikan. 
+        Semua ikan dirawat dengan standar tinggi dan cocok untuk pemula hingga kolektor.
+      </p>
+    </div>
+  </div>
+
+  <div class="container" id="kontak">
+    <div class="contact">
+      <h2>Kontak</h2>
+      <p>📍 Indonesia</p>
+      <p>📱 WhatsApp: <strong>08xxxxxxxxxx</strong></p>
+      <p>📦 Pengiriman seluruh Indonesia</p>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 Cupang Juara • Website Jualan Ikan Cupang
+  </footer>
+
+</body>
+</html>
